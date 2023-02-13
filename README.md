@@ -11,109 +11,30 @@ This repository contains the code and demo for our paper:
 
 - [Overview](#Overview)
 - [Getting Started](#Getting-Started)
+- [Easy Demo with Pip](#Easy-Demo-with-Pip)
 - [Demo](#Demo)
-- [Easy Demo](#Easy-Demo)
 
 
 
 ## Overview
 
 TODO: coming soon
-TODO: coming soon
-
-TODO: coming soon
-
-TODO: coming soon
-
-TODO: coming soon
-
-TODO: coming soon
-
-TODO: coming soon
-
-TODO: coming soon
-
-TODO: coming soon
-
-TODO: coming soon
-
-TODO: coming soon
-
-TODO: coming soon
-
-TODO: coming soon
-
-TODO: coming soon
-
 
 ## Getting Started
 
 TODO: coming soon
-TODO: coming soon
-
-TODO: coming soon
-
-TODO: coming soon
-
-TODO: coming soon
-
-TODO: coming soon
-
-TODO: coming soon
-
-TODO: coming soon
-
-TODO: coming soon
-
-TODO: coming soon
-
 
 ## Demo
 
 TODO: coming soon
-TODO: coming soon
-
-TODO: coming soon
-
-TODO: coming soon
-
-TODO: coming soon
-
-TODO: coming soon
-
-TODO: coming soon
-
-TODO: coming soon
-
-TODO: coming soon
-
-TODO: coming soon
-
-TODO: coming soon
-
 
 ## Easy Demo with Pip
-
-TODO: coming soon
-
-TODO: coming soon
-
-TODO: coming soon
-
-TODO: coming soon
-
-TODO: coming soon
-
-TODO: coming soon
 
 TODO: coming soon
 
 ## Training, Inference and Evaluation
 
 TODO: coming soon
-
-TODO: coming soon
-
 
 ## Citation
 
