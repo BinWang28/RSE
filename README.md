@@ -24,6 +24,8 @@ TODO: coming soon
 
 **Step-by-step Environment Setup**: We provide step-by-step environment [setup](environment/README.md).
 
+**One-line Environment Setup**: An easy one-line environment [setup](environment/README.md) (maybe harder to debug).
+
 TODO: coming soon
 
 
