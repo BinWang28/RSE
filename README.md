@@ -11,8 +11,8 @@ This repository contains the code and demo for our paper:
 
 - [Overview](#Overview)
 - [Getting Started](#Getting-Started)
-- [Demo](##Demo)
-- [Easy Demo](##Easy-Demo)
+- [Demo](#Demo)
+- [Easy Demo](#Easy-Demo)
 
 
 
