@@ -11,12 +11,27 @@ This repository contains the code and demo for our paper: [Relational Sentence E
 
 
 
+## Outline
 
+
+<div align="center">
+
+| Section | Description |
+|-|-|
+| [Evluation Tasks](#Evluation-Tasks)          						| Evluation Tasks                   |
+| [Environment Setup](#Environment-Setup) 							| Environments             		    |
+| [Models and Quick Start](#Models-and-Quick-Start) 				| Models and Quick Start            |
+| [Benchmarking - Word](#Benchmarking---Word)						| Leaderboard              		    |
+| [Benchmarking - Sentence](#Benchmarking---Sentence)				| Leaderboard              		    |
+| [References](#References)											| References                    	|
+| [Acknowledge](#Acknowledge)										| Acknowledge		   		 		|
+
+</div>
 
 
 ## Citation
 
-Please cite our paper if you find RSE useful in your work:
+Please cite our paper if you find RSE useful in your work.
 
 ```bibtex
 @article{wang2022rse,
