@@ -1,4 +1,4 @@
-# RSE: Relational Sentence Embedding
+# RSE - Relational Sentence Embedding
 
 ** In this project, we provide the training code, inference and demo for our proposed relational sentence embedding framework. **
 
