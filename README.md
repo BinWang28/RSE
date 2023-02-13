@@ -22,9 +22,9 @@ TODO: coming soon
 
 ## Getting Started
 
-TODO: coming soon
+**Step-by-step Environment Setup**: We provide step-by-step environment [setup](environment/README.md).
 
-**Step-by-step Environment Setup**: xx
+TODO: coming soon
 
 
 ## Easy Demo with Pip
