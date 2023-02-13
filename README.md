@@ -14,7 +14,19 @@ This repository contains the code and demo for our paper: [Relational Sentence E
 
 
 
-**For more details, please refer to our paper:**
+## Citation
+
+Please cite our paper if you find RSE useful in your work:
+
+```bibtex
+@article{wang2022rse,
+  title={Relational Sentence Embedding for Flexible Semantic Matching},
+  author={Wang, Bin and Li, Haizhou},
+  journal={arXiv preprint arXiv:2212.08802},
+  year={2022}
+}
+```
+
 
 
 ### Plan - Paper - Inference - Evaluation - Work with Hugg
