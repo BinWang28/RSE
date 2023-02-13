@@ -2,7 +2,7 @@
 
 This repository contains the code and demo for our paper: [Relational Sentence Embedding for Flexible Semantic Matching](https://arxiv.org/abs/2212.08802).
 
-
+********* Update *********
 In this project, we provide 
 (1) training code, (2) inference code, and (3) demo for our proposed relational sentence embedding framework.**
 
