@@ -14,7 +14,7 @@ This repository contains the code and demo for our paper:
 
 
 - [Overview](##Overview)
-
+- [Getting Started](##Getting-Started)
 
 | Section 
 |-|
@@ -27,7 +27,11 @@ This repository contains the code and demo for our paper:
 
 ## Overview
 
-xxx
+TODO: coming soon
+
+## Getting Started
+
+TODO: coming soon
 
 ## Citation
 
