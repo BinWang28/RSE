@@ -14,7 +14,7 @@ This repository contains the code and demo for our paper: [Relational Sentence E
 ## Outline
 
 
-<div align="center">
+<div align="left">
 
 | Section | Description |
 |-|-|
