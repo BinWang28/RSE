@@ -18,8 +18,8 @@ This repository contains the code and demo for our paper: [Relational Sentence E
 
 | Section | Description |
 |-|-|
-| [Evluation Tasks](#Evluation-Tasks)          						| Evluation Tasks                   |
-| [Citation](##Citation)											| Citation                    	|
+| [Evluation Tasks](#Evluation-Tasks)          						| Evluation Tasks               |
+| [Citation](##Citation)											| Citation Bibliography       	|
 
 </div>
 
