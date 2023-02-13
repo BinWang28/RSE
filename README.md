@@ -24,11 +24,11 @@ TODO: coming soon
 
 TODO: coming soon
 
-## Demo
+## Easy Demo with Pip
 
 TODO: coming soon
 
-## Easy Demo with Pip
+## Demo
 
 TODO: coming soon
 
