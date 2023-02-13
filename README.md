@@ -1,9 +1,8 @@
 # RSE - Relational Sentence Embedding
 
-**In this project, we provide the training code, inference and demo for our proposed relational sentence embedding framework.**
+**In this project, we provide (1) training code, (2) inference code, and (3) demo for our proposed relational sentence embedding framework.**
 
-Will update soon
-
+**For more details, please refer to our paper:**
 
 
 ### Plan - Paper - Inference - Evaluation - Work with Hugg
