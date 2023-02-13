@@ -1,4 +1,4 @@
-# RSE:
+# Relational Sentence Embedding
 
 Will update soon
 
