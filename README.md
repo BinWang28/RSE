@@ -24,7 +24,7 @@ TODO: coming soon
 
 TODO: coming soon
 
-**Step-by-step environment setup**
+**Step-by-step Environment Setup**: xx
 
 
 ## Easy Demo with Pip
