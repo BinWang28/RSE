@@ -1,4 +1,4 @@
-# RSE: Relational Sentence Embedding for Flexible Semantic Matching
+## RSE: Relational Sentence Embedding for Flexible Semantic Matching
 
 In this project, we provide 
 (1) training code, (2) inference code, and (3) demo for our proposed relational sentence embedding framework.**
