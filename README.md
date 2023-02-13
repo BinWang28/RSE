@@ -4,7 +4,7 @@ This repository contains the code and demo for our paper: [Relational Sentence E
 
 ********* Update *********
 
-- **Feb. 13, 2023**: We released our first [checkpoint]((demo/)) and inference [demo](demo/). Check it out.
+- **Feb. 13, 2023**: We released our first [checkpoint](demo/) and inference [demo](demo/). Check it out.
 - **Dec. 17, 2022**: Our paper is available online: [RSE Paper](https://arxiv.org/abs/2212.08802).
 
 ************ End ************
