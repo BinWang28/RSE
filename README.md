@@ -19,12 +19,7 @@ This repository contains the code and demo for our paper: [Relational Sentence E
 | Section | Description |
 |-|-|
 | [Evluation Tasks](#Evluation-Tasks)          						| Evluation Tasks                   |
-| [Environment Setup](#Environment-Setup) 							| Environments             		    |
-| [Models and Quick Start](#Models-and-Quick-Start) 				| Models and Quick Start            |
-| [Benchmarking - Word](#Benchmarking---Word)						| Leaderboard              		    |
-| [Benchmarking - Sentence](#Benchmarking---Sentence)				| Leaderboard              		    |
-| [References](#References)											| References                    	|
-| [Acknowledge](#Acknowledge)										| Acknowledge		   		 		|
+| [Citation](##Citation)											| Citation                    	|
 
 </div>
 
