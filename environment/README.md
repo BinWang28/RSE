@@ -1,7 +1,11 @@
 ## Environment
 
 
+### Step-by-step environment setup
 
-### All-in-one environment setup
+
+
+
+### One-line environment setup
 
 We proiv
