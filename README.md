@@ -9,19 +9,9 @@ This repository contains the code and demo for our paper:
 
 ## Outline
 
-
-<div align="left">
-
-
-- [Overview](#Overview)
+- [Overview](##Overview)
 - [Getting Started](##Getting-Started)
 
-| Section 
-|-|
-| [Overview](##Overview)          						| Evluation Tasks               |
-| [Citation](##Citation)					     		| Citation Bibliography       	|
-
-</div>
 
 
 
