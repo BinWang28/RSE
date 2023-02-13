@@ -13,7 +13,13 @@ The guidance can be also adapted to python naive pip.
 conda create -n RSE-env python=3.7
 ```
 
-**xx**
+**Activate the environment**
+
+```
+conda activate RSE-env
+```
+
+**x**
 
 
 xxx
