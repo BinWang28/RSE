@@ -10,7 +10,7 @@ This repository contains the code and demo for our paper:
 ## Outline
 
 - [Overview](#Overview)
-- [Getting Started](##getting-started)
+- [Getting Started](#Getting-Started)
 - [Demo](##Demo)
 - [Easy Demo](##Easy-Demo)
 
