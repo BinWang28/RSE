@@ -7,10 +7,10 @@ This repository contains the code and demo for our paper:
 - **Dec. 17, 2022**: Our paper is available online: [RSE Paper](https://arxiv.org/abs/2212.08802).
 
 
-## Outline
+### Outline
 
 - [RSE: Relational Sentence Embedding for Flexible Semantic Matching](#rse-relational-sentence-embedding-for-flexible-semantic-matching)
-- [Outline](#outline)
+  - [Outline](#outline)
 - [Overview](#overview)
 - [Getting Started](#getting-started)
   - [Step 1: Environment Setup](#step-1-environment-setup)
