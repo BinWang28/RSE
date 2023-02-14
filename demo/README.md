@@ -20,9 +20,36 @@ To duplicate the demo (run in the root directory):
 bash scripts/demo_inference_local.sh
 ```
 
-- **Case 1:**
+- **Case 1:** The first 
 
 ![](example1.png)
 
 
 - **Case 2:**
+
+![](example2.png)
+
+
+- **Case 3:**
+
+![](example3.png)
+
+
+- **Case 4:**
+
+![](example4.png)
+
+
+- **Case 5:**
+
+![](example5.png)
+
+
+- **Case 6:**
+
+![](example6.png)
+
+
+- **Case 7:**
+
+![](example7.png)
