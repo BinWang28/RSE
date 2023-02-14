@@ -20,9 +20,9 @@ To duplicate the demo (run in the root directory):
 bash scripts/demo_inference_local.sh
 ```
 
-- Case 1:
+- **Case 1:**
 
 ![](example1.png)
 
 
-- Case 2:
+- **Case 2:**
