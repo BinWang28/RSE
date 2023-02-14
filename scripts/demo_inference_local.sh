@@ -7,7 +7,7 @@ start=`date +%s`
 echo "= = = = = = = = = = = = = ="
 
 
-accelerate launch --config_file accelerate_config1.yaml --num_cpu_threads_per_process 10 \
+accelerate launch --config_file accelerate_config.yaml --num_cpu_threads_per_process 10 \
     rse_src/inference.py \
         --model_name_or_path binwang/RSE-BERT-base-10-relations \
         --mode RSE \
@@ -22,6 +22,3 @@ end=`date +%s`
 runtime=$((end-start))
 echo "The program takes '$((runtime / 60))' minutes."
 echo "= = = = = = = = = = = = = ="
-
-
-#         --model_name_or_path scripts/model_cache \
