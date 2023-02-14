@@ -51,9 +51,7 @@ bash scripts/demo_inference_local.sh
 
 Here are our provided model checkpoints, all available on Huggingface.
 
-<div align="center">
-
-binwang/RSE-BERT-base-10-relations
+<div align="left">
 
 | Model | Description |
 |-|-|
