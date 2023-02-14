@@ -20,36 +20,36 @@ To duplicate the demo (run in the root directory):
 bash scripts/demo_inference_local.sh
 ```
 
-- **Case 1:** The first 
+- **Case 1:** Two sentences has the most highest score for 'entailment'.
 
 ![](example1.png)
 
 
-- **Case 2:**
+- **Case 2:** Two sentence has the most highest score for 'same sent' and 'entailment'.
 
 ![](example2.png)
 
 
-- **Case 3:**
+- **Case 3:** Very high score for 'duplicate question', 'paraphrase', 'same sent'.
 
 ![](example3.png)
 
 
-- **Case 4:**
+- **Case 4:** Very high score for 'duplicate question', 'paraphrase', 'same sent'.
 
 ![](example4.png)
 
 
-- **Case 5:**
+- **Case 5:** Very high score for 'duplicate question', 'paraphrase', 'same sent'.
 
 ![](example5.png)
 
 
-- **Case 6:**
+- **Case 6:** 'question answering (qa entailment)' has the highest score.
 
 ![](example6.png)
 
 
-- **Case 7:**
+- **Case 7:** 'question answering (qa entailment)' has the highest score.
 
 ![](example7.png)
