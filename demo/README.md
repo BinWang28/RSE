@@ -22,7 +22,7 @@ bash scripts/demo_inference_local.sh
 
 - Case 1:
 
-![](demo/example1.png)
+![](example1.png)
 
 
 - Case 2:
