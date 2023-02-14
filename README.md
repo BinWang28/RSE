@@ -55,13 +55,7 @@ Here are our provided model checkpoints, all available on Huggingface.
 
 | Model | Description |
 |-|-|
-| [binwang/RSE-BERT-base-10-relations](https://huggingface.co/binwang/RSE-BERT-base-10-relations) | xxx                   |
-| [Environment Setup](#Environment-Setup) 							| Environments             		    |
-| [Models and Quick Start](#Models-and-Quick-Start) 				| Models and Quick Start            |
-| [Benchmarking - Word](#Benchmarking---Word)						| Leaderboard              		    |
-| [Benchmarking - Sentence](#Benchmarking---Sentence)				| Leaderboard              		    |
-| [References](#References)											| References                    	|
-| [Acknowledge](#Acknowledge)										| Acknowledge		   		 		|
+| [binwang/RSE-BERT-base-10-relations](https://huggingface.co/binwang/RSE-BERT-base-10-relations) | Model Card |
 
 </div>
 
