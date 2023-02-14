@@ -15,6 +15,7 @@ This repository contains the code and demo for our paper:
 - [Getting Started](#getting-started)
   - [Step 1: Environment Setup](#step-1-environment-setup)
   - [Step 2: Inference Demo](#step-2-inference-demo)
+- [Model List](#model-list)
 - [Easy Demo with Pip](#easy-demo-with-pip)
 - [Training, Inference and Evaluation](#training-inference-and-evaluation)
 - [Citation](#citation)
@@ -45,6 +46,10 @@ bash scripts/demo_inference_local.sh
 
 - **Analysis**: We can see that the highest relational similarity score between the above two sentences is **entailment**. Meantime, you get scores with any relations, this can be used flexiblely for various tasks.
 
+
+## Model List
+
+Here are several popular model lists.
 
 ## Easy Demo with Pip
 
