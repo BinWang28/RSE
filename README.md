@@ -55,7 +55,7 @@ Here are our provided model checkpoints, all available on Huggingface.
 
 | Model | Description |
 |-|-|
-| [binwang/RSE-BERT-base-10-relations](https://huggingface.co/binwang/RSE-BERT-base-10-relations) | for demo |
+| [binwang/RSE-BERT-base-10-relations](https://huggingface.co/binwang/RSE-BERT-base-10-relations) | all 10 relations, for demo |
 
 </div>
 
