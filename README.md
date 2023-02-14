@@ -42,9 +42,7 @@ After environment setup, we can process with the inference demo. The trained mod
 bash scripts/demo_inference_local.sh
 ```
 
-![](demo/example1.png){:height="36px" width="36px"}.
-
-<img src=demo/example1.png  width=50% height=50%>
+<img src="demo/example1.png" width=50% height=50%>
 
 
 
