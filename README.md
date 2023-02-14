@@ -44,6 +44,10 @@ bash scripts/demo_inference_local.sh
 
 ![](demo/example1.png){:height="36px" width="36px"}.
 
+<img src=demo/example1.png  width=50% height=50%>
+
+
+
 - **Analysis**: We can see that the highest relational similarity score between the above two sentences is **entailment**. Meantime, you get scores with any relations, this can be used flexiblely for various tasks.
 
 
