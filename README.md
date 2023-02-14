@@ -36,6 +36,9 @@ After environment setup, we can process with the inference demo. The trained mod
 bash scripts/demo_inference_local.sh
 ```
 
+![](demo/example1.png)
+
+
 ## Easy Demo with Pip
 
 TODO: coming soon
