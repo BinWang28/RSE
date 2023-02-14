@@ -38,11 +38,12 @@ bash scripts/demo_inference_local.sh
 
 ![](demo/example1.png)
 
-- **Analysis**: We can see that the highest relational similarity score between the above two sentences are **entailment**.
+- **Analysis**: We can see that the highest relational similarity score between the above two sentences is **entailment**. Meantime, you get scores with any relations, this can be used flexiblely for various tasks.
+
 
 ## Easy Demo with Pip
 
-TODO: coming soon
+TODO: integrate the code and model with pypi
 
 
 ## Demo
