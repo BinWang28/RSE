@@ -51,6 +51,20 @@ bash scripts/demo_inference_local.sh
 
 Here are several popular model lists.
 
+<div align="center">
+
+| Section | Description |
+|-|-|
+| [Evluation Tasks](#Evluation-Tasks)          						| Evluation Tasks                   |
+| [Environment Setup](#Environment-Setup) 							| Environments             		    |
+| [Models and Quick Start](#Models-and-Quick-Start) 				| Models and Quick Start            |
+| [Benchmarking - Word](#Benchmarking---Word)						| Leaderboard              		    |
+| [Benchmarking - Sentence](#Benchmarking---Sentence)				| Leaderboard              		    |
+| [References](#References)											| References                    	|
+| [Acknowledge](#Acknowledge)										| Acknowledge		   		 		|
+
+</div>
+
 ## Easy Demo with Pip
 
 TODO: integrate the code and model with pypi
