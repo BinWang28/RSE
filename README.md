@@ -9,10 +9,15 @@ This repository contains the code and demo for our paper:
 
 ## Outline
 
-- [Overview](#Overview)
-- [Getting Started](#Getting-Started)
-- [Easy Demo with Pip](#Easy-Demo-with-Pip)
-- [Demo](#Demo)
+- [RSE: Relational Sentence Embedding for Flexible Semantic Matching](#rse-relational-sentence-embedding-for-flexible-semantic-matching)
+- [Outline](#outline)
+- [Overview](#overview)
+- [Getting Started](#getting-started)
+  - [Step 1: Environment Setup](#step-1-environment-setup)
+  - [Step 2: Inference Demo](#step-2-inference-demo)
+- [Easy Demo with Pip](#easy-demo-with-pip)
+- [Training, Inference and Evaluation](#training-inference-and-evaluation)
+- [Citation](#citation)
 
 
 ## Overview
@@ -46,14 +51,9 @@ bash scripts/demo_inference_local.sh
 TODO: integrate the code and model with pypi
 
 
-## Demo
-
-TODO: coming soon
-
-
 ## Training, Inference and Evaluation
 
-TODO: coming soon
+TODO: Provide the whole training files (1) continue training (2) for STS Tasks (3) for Transfer Tasks (4) for USEB Tasks.
 
 
 ## Citation
@@ -69,6 +69,4 @@ Please cite our paper if you find RSE useful in your work.
 }
 ```
 
-
-
-### Plan - Paper - Inference - Evaluation - Work with Hugg
+Please contact Bin Wang @ bwang28c@gmail.com or raise an issue.
