@@ -38,6 +38,7 @@ bash scripts/demo_inference_local.sh
 
 ![](demo/example1.png)
 
+Analysis: We can see that the highest relational similarity score between the above two sentences are **entailment**.
 
 ## Easy Demo with Pip
 
