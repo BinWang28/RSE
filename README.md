@@ -49,13 +49,15 @@ bash scripts/demo_inference_local.sh
 
 ## Model List
 
-Here are several popular model lists.
+Here are our provided model checkpoints, all available on Huggingface.
 
 <div align="center">
 
-| Section | Description |
+binwang/RSE-BERT-base-10-relations
+
+| Model | Description |
 |-|-|
-| [Evluation Tasks](#Evluation-Tasks)          						| Evluation Tasks                   |
+| [RSE-BERT-base-10-relations](https://huggingface.co/binwang/RSE-BERT-base-10-relations) | xxx                   |
 | [Environment Setup](#Environment-Setup) 							| Environments             		    |
 | [Models and Quick Start](#Models-and-Quick-Start) 				| Models and Quick Start            |
 | [Benchmarking - Word](#Benchmarking---Word)						| Leaderboard              		    |
