@@ -22,34 +22,34 @@ bash scripts/demo_inference_local.sh
 
 - **Case 1:** Two sentences has the most highest score for 'entailment'.
 
-<img src="demo/example1.png" width=80% height=80%>
+<img src="example1.png" width=80% height=80%>
 
 
 - **Case 2:** Two sentence has the most highest score for 'same sent' and 'entailment'.
 
-<img src="demo/example2.png" width=80% height=80%>
+<img src="example2.png" width=80% height=80%>
 
 
 - **Case 3:** Very high score for 'duplicate question', 'paraphrase', 'same sent'.
 
-<img src="demo/example3.png" width=80% height=80%>
+<img src="example3.png" width=80% height=80%>
 
 
 - **Case 4:** Very high score for 'duplicate question', 'paraphrase', 'same sent'.
 
-<img src="demo/example4.png" width=80% height=80%>
+<img src="example4.png" width=80% height=80%>
 
 
 - **Case 5:** Very high score for 'duplicate question', 'paraphrase', 'same sent'.
 
-<img src="demo/example5.png" width=80% height=80%>
+<img src="example5.png" width=80% height=80%>
 
 
 - **Case 6:** 'question answering (qa entailment)' has the highest score.
 
-<img src="demo/example6.png" width=80% height=80%>
+<img src="example6.png" width=80% height=80%>
 
 
 - **Case 7:** 'question answering (qa entailment)' has the highest score.
 
-<img src="demo/example7.png" width=80% height=80%>
+<img src="example7.png" width=80% height=80%>
