@@ -110,7 +110,20 @@ cd rse_src/SentEval/data/downstream/
 bash download_RSE_SentEval_data.sh
 ```
 
-- xx
+- To reproduce the evaluation on STS (`RSE-BERT-base` as am example, run in the main folder)
+
+```
+bash scripts/demo_inference_STS.sh
+```
+
+The expected results:
+```
+xxx
+```
+
+Explaination of the arguments of evaluation code (in `scripts/demo_inference_STS.sh`):
+
+`xx`: xxx
 
 ### Transfer Tasks
 
