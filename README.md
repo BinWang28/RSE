@@ -43,9 +43,9 @@ TODO: coming soon
 
 After environment setup, we can process with the inference demo. The trained model will be automatically downloaded through Huggingface.
   
-  ```
-  bash scripts/demo_inference_local.sh
-  ```
+```
+bash scripts/demo_inference_local.sh
+```
 
 <p align="center">
 <img src="demo/example1.png" width=80% height=80% >
@@ -54,6 +54,7 @@ After environment setup, we can process with the inference demo. The trained mod
 - **Analysis**: We can see that the highest relational similarity score between the above two sentences is **entailment**. Meantime, you get scores with any relations, this can be used flexiblely for various tasks.
 
 - To choose other models: 
+  
     ```
     --model_name_or_path binwang/RSE-BERT-base-10-relations
     --model_name_or_path binwang/RSE-BERT-large-10-relations
