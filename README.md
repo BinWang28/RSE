@@ -49,6 +49,9 @@ bash scripts/demo_inference_local.sh
 - To choose other models: 
 ```
 --model_name_or_path binwang/RSE-BERT-base-10-relations
+--model_name_or_path binwang/RSE-BERT-large-10-relations
+--model_name_or_path binwang/RSE-RoBERTa-base-10-relations
+--model_name_or_path binwang/RSE-RoBERTa-large-10-relations
 ```
 
 ## Model List
