@@ -118,12 +118,20 @@ bash scripts/demo_inference_STS.sh
 
 The expected results:
 ```
-xxx
++-------+-------+-------+-------+-------+--------------+-----------------+-------+
+| STS12 | STS13 | STS14 | STS15 | STS16 | STSBenchmark | SICKRelatedness |  Avg. |
++-------+-------+-------+-------+-------+--------------+-----------------+-------+
+| 76.27 | 84.43 | 80.60 | 86.03 | 81.86 |    84.34     |      81.73      | 82.18 |
++-------+-------+-------+-------+-------+--------------+-----------------+-------+
 ```
 
 Explaination of the arguments of evaluation code (in `scripts/demo_inference_STS.sh`):
 
 `xx`: xxx
+
+Result for other models:
+TODO: add a table
+
 
 ### Transfer Tasks
 
