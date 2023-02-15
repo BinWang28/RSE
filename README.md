@@ -54,12 +54,12 @@ bash scripts/demo_inference_local.sh
 - **Analysis**: We can see that the highest relational similarity score between the above two sentences is **entailment**. Meantime, you get scores with any relations, this can be used flexiblely for various tasks.
 
 - To choose other models: 
-```
---model_name_or_path binwang/RSE-BERT-base-10-relations
---model_name_or_path binwang/RSE-BERT-large-10-relations
---model_name_or_path binwang/RSE-RoBERTa-base-10-relations
---model_name_or_path binwang/RSE-RoBERTa-large-10-relations
-```
+    ```
+    --model_name_or_path binwang/RSE-BERT-base-10-relations
+    --model_name_or_path binwang/RSE-BERT-large-10-relations
+    --model_name_or_path binwang/RSE-RoBERTa-base-10-relations
+    --model_name_or_path binwang/RSE-RoBERTa-large-10-relations
+    ```
 
 ## Model List
 
