@@ -30,7 +30,11 @@ This repository contains the code for our paper:
 
 ## Overview
 
-TODO: coming soon
+We propose a new sentence embedding paradigm to further discover the potential of sentence embeddings. Previous sentence embedding learns on vector representation for each sentence and no relation information is incorporated. Here, in RSE, the sentence relations are explicitly modelled. During inference, we can obtain sentence similarity for each relation type. The `relational similarity score` can be flexible used for sentence embedding applications like clustering, ranking, similarity modeling, and retrieval.
+
+We believe the `Relational Sentence Embedding` has great potential in developing new models as well as applications.
+
+
 
 
 ## Getting Started
