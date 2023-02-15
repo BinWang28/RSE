@@ -17,6 +17,11 @@ This repository contains the code for our paper:
   - [Step 2: Inference Demo](#step-2-inference-demo)
 - [Model List](#model-list)
 - [Easy Demo with Pip](#easy-demo-with-pip)
+- [Evaluation-Only](#evaluation-only)
+  - [STS Tasks](#sts-tasks)
+  - [Transfer Tasks](#transfer-tasks)
+  - [EvalRank Tasks](#evalrank-tasks)
+  - [USEB Tasks](#useb-tasks)
 - [Training, Inference and Evaluation](#training-inference-and-evaluation)
 - [Citation](#citation)
 
@@ -73,6 +78,25 @@ Here are our provided model checkpoints, all available on Huggingface.
 
 TODO: integrate the code and model with pypi
 
+## Evaluation-Only
+
+We include the evaluation with STS tasks, transfer tasks, EvalRank, and USEB tasks.
+
+  ### STS Tasks
+
+  TODO: xx
+
+  ### Transfer Tasks
+
+  TODO: xx
+
+  ### EvalRank Tasks
+
+  TODO: xx
+
+  ### USEB Tasks
+
+  TODO: xx
 
 ## Training, Inference and Evaluation
 
