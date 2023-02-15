@@ -23,6 +23,8 @@ This repository contains the code for our paper:
   - [EvalRank Tasks](#evalrank-tasks)
   - [USEB Tasks](#useb-tasks)
 - [Training, Inference and Evaluation](#training-inference-and-evaluation)
+  - [Data Preparation](#data-preparation)
+  - [Training](#training)
 - [Citation](#citation)
 
 
@@ -100,6 +102,12 @@ TODO: xx
 TODO: xx
 
 ## Training, Inference and Evaluation
+
+### Data Preparation
+
+Please download all seven [relational data](https://huggingface.co/datasets/binwang/RSE-sentence-relational-data) or necessary ones and place them in the './data' folder.
+
+### Training
 
 TODO: Provide the whole training files (1) continue training (2) for STS Tasks (3) for Transfer Tasks (4) for USEB Tasks.
 
