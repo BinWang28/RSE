@@ -122,6 +122,10 @@ TODO: xx
 ### Data Preparation
 
 Please download all seven [relational data](https://huggingface.co/datasets/binwang/RSE-sentence-relational-data) or necessary ones and place them in the './data' folder.
+```
+cd data/
+bash download_relational_data.sh
+```
 
 ### Training
 

@@ -55,6 +55,12 @@ def parse_args():
         required=False,
     )
     parser.add_argument(
+        "--metric_for_eval",
+        type=str,
+        help="Task performance for evaluation",
+        required=False,
+    )
+    parser.add_argument(
         "--seed",
         type=int,
         default=None,

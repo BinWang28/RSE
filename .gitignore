@@ -136,3 +136,21 @@ github_update.sh
 
 development/
 scripts/model_cache/
+
+rse_src/SentEval/data/probing/
+rse_src/SentEval/data/downstream/CR/
+rse_src/SentEval/data/downstream/MPQA/
+rse_src/SentEval/data/downstream/MR/
+rse_src/SentEval/data/downstream/MRPC/
+rse_src/SentEval/data/downstream/RELPRED/
+rse_src/SentEval/data/downstream/SICK/
+rse_src/SentEval/data/downstream/SST/
+rse_src/SentEval/data/downstream/STS/
+rse_src/SentEval/data/downstream/SUBJ/
+rse_src/SentEval/data/downstream/TREC/
+
+rse_src/useb/data/data-train/
+rse_src/useb/data/data-eval/
+
+
+
