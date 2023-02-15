@@ -116,4 +116,4 @@ TODO: integrate the code and model with pypi
   }
   ```
 
-Please contact Bin Wang @ bwang28c@gmail.com or raise an issue.
+  Please contact Bin Wang @ bwang28c@gmail.com or raise an issue.
