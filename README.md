@@ -1,6 +1,6 @@
 ## RSE: Relational Sentence Embedding for Flexible Semantic Matching
 
-[![](https://img.shields.io/badge/RSE)](https://github.com/BinWang28/RSE)
+[![](https://img.shields.io/badge/RSE-source-green)](https://github.com/BinWang28/RSE)
 ![](https://img.shields.io/badge/Language-English-blue)
 
 This repository contains the code for our paper: 
