@@ -44,10 +44,12 @@ bash scripts/demo_inference_local.sh
 
 <img src="demo/example1.png" width=80% height=80%>
 
-
-
 - **Analysis**: We can see that the highest relational similarity score between the above two sentences is **entailment**. Meantime, you get scores with any relations, this can be used flexiblely for various tasks.
 
+- To choose other models: 
+```
+--model_name_or_path binwang/RSE-BERT-base-10-relations
+```
 
 ## Model List
 
