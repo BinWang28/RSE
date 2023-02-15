@@ -80,23 +80,23 @@ TODO: integrate the code and model with pypi
 
 ## Evaluation-Only
 
-We include the evaluation with STS tasks, transfer tasks, EvalRank, and USEB tasks.
+  We include the evaluation with STS tasks, transfer tasks, EvalRank, and USEB tasks.
 
   ### STS Tasks
 
-  TODO: xx
+    TODO: xx
 
   ### Transfer Tasks
 
-  TODO: xx
+    TODO: xx
 
   ### EvalRank Tasks
 
-  TODO: xx
+    TODO: xx
 
   ### USEB Tasks
 
-  TODO: xx
+    TODO: xx
 
 ## Training, Inference and Evaluation
 
