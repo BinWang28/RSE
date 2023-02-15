@@ -100,20 +100,20 @@ TODO: integrate the code and model with pypi
 
 ## Training, Inference and Evaluation
 
-TODO: Provide the whole training files (1) continue training (2) for STS Tasks (3) for Transfer Tasks (4) for USEB Tasks.
+  TODO: Provide the whole training files (1) continue training (2) for STS Tasks (3) for Transfer Tasks (4) for USEB Tasks.
 
 
 ## Citation
 
-Please cite our paper if you find RSE useful in your work.
+  Please cite our paper if you find RSE useful in your work.
 
-```bibtex
-@article{wang2022rse,
-  title={Relational Sentence Embedding for Flexible Semantic Matching},
-  author={Wang, Bin and Li, Haizhou},
-  journal={arXiv preprint arXiv:2212.08802},
-  year={2022}
-}
-```
+  ```bibtex
+  @article{wang2022rse,
+    title={Relational Sentence Embedding for Flexible Semantic Matching},
+    author={Wang, Bin and Li, Haizhou},
+    journal={arXiv preprint arXiv:2212.08802},
+    year={2022}
+  }
+  ```
 
 Please contact Bin Wang @ bwang28c@gmail.com or raise an issue.
