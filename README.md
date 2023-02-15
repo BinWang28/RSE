@@ -65,7 +65,7 @@ bash scripts/demo_inference_local.sh
 
 Here are our provided model checkpoints, all available on Huggingface.
 
-<div align="left">
+<div align="center">
 
 | Model | Description |
 |-|-|
