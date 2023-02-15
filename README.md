@@ -103,7 +103,14 @@ We include the evaluation with (1) STS tasks, (2) Transfer tasks, (3) EvalRank, 
 
 ### STS Tasks
 
-TODO: xx
+- Download STS datasets first
+
+```
+cd rse_src/SentEval/data/downstream/
+bash download_RSE_SentEval_data.sh
+```
+
+- xx
 
 ### Transfer Tasks
 

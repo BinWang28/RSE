@@ -152,5 +152,7 @@ rse_src/SentEval/data/downstream/TREC/
 rse_src/useb/data/data-train/
 rse_src/useb/data/data-eval/
 
+data/*.json
+
 
 

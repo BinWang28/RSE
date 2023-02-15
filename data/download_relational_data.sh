@@ -11,6 +11,6 @@ wget https://huggingface.co/datasets/binwang/RSE-sentence-relational-data/resolv
 
 wget https://huggingface.co/datasets/binwang/RSE-sentence-relational-data/resolve/main/wiki_drop.json
 
-wget https://huggingface.co/datasets/binwang/RSE-sentence-relational-data/resolve/main/mnli_full.json
+wget https://huggingface.co/datasets/binwang/RSE-sentence-relational-data/resolve/main/paranmt_5m.json
 
 
