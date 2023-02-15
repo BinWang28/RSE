@@ -35,7 +35,7 @@ We propose a new sentence embedding paradigm to further discover the potential o
 We believe the `Relational Sentence Embedding` has great potential in developing new models as well as applications.
 
 <p align="center">
-<img src="figure/framework-1.png" width=80% height=80% >
+<img src="figure/framework-1.png" width=99% height=99% >
 </p>
 
 
