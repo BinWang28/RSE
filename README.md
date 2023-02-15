@@ -89,6 +89,8 @@ Here are our provided model checkpoints, all available on Huggingface.
 | [binwang/RSE-BERT-base-10-relations](https://huggingface.co/binwang/RSE-BERT-base-10-relations) | all 10 relations, for demo |
 | [binwang/RSE-BERT-large-10-relations](https://huggingface.co/binwang/RSE-BERT-large-10-relations) | all 10 relations, for demo |
 | [binwang/RSE-RoBERTa-base-10-relations](https://huggingface.co/binwang/RSE-RoBERTa-base-10-relations) | all 10 relations, for demo |
+| [binwang/RSE-RoBERTa-large-10-relations](https://huggingface.co/binwang/RSE-RoBERTa-large-10-relations) | all 10 relations, for demo |
+| [binwang/RSE-BERT-base-STS](https://huggingface.co/binwang/RSE-BERT-base-STS) | BERT-base for STS task |
 | [More to update](https://huggingface.co/binwang/) | Full list of models |
 
 </div>
@@ -130,6 +132,7 @@ Explaination of the arguments of evaluation code (in `scripts/demo_inference_STS
 `xx`: xxx
 
 Result for other models:
+
 TODO: add a table
 
 
