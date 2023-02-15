@@ -42,7 +42,6 @@ TODO: coming soon
 ### Step 2: Inference Demo
 
 After environment setup, we can process with the inference demo. The trained model will be automatically downloaded through Huggingface.
-
     ```
     bash scripts/demo_inference_local.sh
     ```
