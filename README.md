@@ -2,6 +2,7 @@
 
 [![](https://img.shields.io/badge/RSE-source-green)](https://github.com/BinWang28/RSE)
 ![](https://img.shields.io/badge/Language-English-blue)
+[![](https://img.shields.io/badge/RSE-arXiv-lightgrey)](https://arxiv.org/abs/2212.08802)
 
 This repository contains the code for our paper: 
 [Relational Sentence Embedding for Flexible Semantic Matching](https://arxiv.org/abs/2212.08802).
