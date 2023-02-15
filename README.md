@@ -42,7 +42,9 @@ After environment setup, we can process with the inference demo. The trained mod
 bash scripts/demo_inference_local.sh
 ```
 
-<img src="demo/example1.png" width=80% height=80% class="center">
+<p align="center">
+<img src="demo/example1.png" width=80% height=80% >
+</p>
 
 - **Analysis**: We can see that the highest relational similarity score between the above two sentences is **entailment**. Meantime, you get scores with any relations, this can be used flexiblely for various tasks.
 
