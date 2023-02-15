@@ -129,7 +129,7 @@ The expected results:
 
 Explaination of the arguments of evaluation code (in `scripts/demo_inference_STS.sh`):
 
-`xx`: xxx
+`--model_name_or_path`: The model to be loaded for evaluation. We provide a serious of models and their performance comparison.
 
 Result for other models:
 
