@@ -80,40 +80,40 @@ TODO: integrate the code and model with pypi
 
 ## Evaluation-Only
 
-  We include the evaluation with STS tasks, transfer tasks, EvalRank, and USEB tasks.
+We include the evaluation with STS tasks, transfer tasks, EvalRank, and USEB tasks.
 
-  ### STS Tasks
+### STS Tasks
 
-    TODO: xx
+TODO: xx
 
-  ### Transfer Tasks
+### Transfer Tasks
 
-    TODO: xx
+TODO: xx
 
-  ### EvalRank Tasks
+### EvalRank Tasks
 
-    TODO: xx
+TODO: xx
 
-  ### USEB Tasks
+### USEB Tasks
 
-    TODO: xx
+TODO: xx
 
 ## Training, Inference and Evaluation
 
-  TODO: Provide the whole training files (1) continue training (2) for STS Tasks (3) for Transfer Tasks (4) for USEB Tasks.
+TODO: Provide the whole training files (1) continue training (2) for STS Tasks (3) for Transfer Tasks (4) for USEB Tasks.
 
 
 ## Citation
 
-  Please cite our paper if you find RSE useful in your work.
+Please cite our paper if you find RSE useful in your work.
 
-  ```bibtex
-  @article{wang2022rse,
-    title={Relational Sentence Embedding for Flexible Semantic Matching},
-    author={Wang, Bin and Li, Haizhou},
-    journal={arXiv preprint arXiv:2212.08802},
-    year={2022}
-  }
-  ```
+```bibtex
+@article{wang2022rse,
+  title={Relational Sentence Embedding for Flexible Semantic Matching},
+  author={Wang, Bin and Li, Haizhou},
+  journal={arXiv preprint arXiv:2212.08802},
+  year={2022}
+}
+```
 
-  Please contact Bin Wang @ bwang28c@gmail.com or raise an issue.
+Please contact Bin Wang @ bwang28c@gmail.com or raise an issue.
