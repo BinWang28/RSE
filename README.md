@@ -27,9 +27,9 @@ This repository contains the code for our paper:
 - [Easy Demo with Pip](#easy-demo-with-pip)
 - [Evaluation-Only](#evaluation-only)
   - [STS Tasks](#sts-tasks)
+  - [USEB Tasks](#useb-tasks)
   - [Transfer Tasks](#transfer-tasks)
   - [EvalRank Tasks](#evalrank-tasks)
-  - [USEB Tasks](#useb-tasks)
 - [Training, Inference and Evaluation](#training-inference-and-evaluation)
   - [Data Preparation](#data-preparation)
   - [Training](#training)
@@ -91,6 +91,17 @@ Here are our provided model checkpoints, all available on Huggingface.
 | [binwang/RSE-RoBERTa-base-10-relations](https://huggingface.co/binwang/RSE-RoBERTa-base-10-relations) | all 10 relations, for demo |
 | [binwang/RSE-RoBERTa-large-10-relations](https://huggingface.co/binwang/RSE-RoBERTa-large-10-relations) | all 10 relations, for demo |
 | [binwang/RSE-BERT-base-STS](https://huggingface.co/binwang/RSE-BERT-base-STS) | BERT-base for STS task |
+| [binwang/RSE-BERT-large-STS](https://huggingface.co/binwang/RSE-BERT-large-STS) | BERT-large for STS task |
+| [binwang/RSE-RoBERTa-base-STS](https://huggingface.co/binwang/RSE-RoBERTa-base-STS) | RoBERTa-base for STS task |
+| [binwang/RSE-RoBERTa-large-STS](https://huggingface.co/binwang/RSE-RoBERTa-large-STS) | RoBERTa-large for STS task |
+| [binwang/RSE-BERT-base-USEB](https://huggingface.co/binwang/RSE-BERT-base-USEB) | BERT-base for USEB task |
+| [binwang/RSE-BERT-large-USEB](https://huggingface.co/binwang/RSE-BERT-large-USEB) | BERT-large for USEB task |
+| [binwang/RSE-RoBERTa-base-USEB](https://huggingface.co/binwang/RSE-RoBERTa-base-USEB) | RoBERTa-base for USEB task |
+| [binwang/RSE-RoBERTa-large-USEB](https://huggingface.co/binwang/RSE-RoBERTa-large-USEB) | RoBERTa-large for USEB task |
+| [binwang/RSE-BERT-base-Transfer](https://huggingface.co/binwang/RSE-BERT-base-Transfer) | BERT-base for Transfer task |
+| [binwang/RSE-BERT-large-Transfer](https://huggingface.co/binwang/RSE-BERT-large-Transfer) | BERT-large for Transfer task |
+| [binwang/RSE-RoBERTa-base-Transfer](https://huggingface.co/binwang/RSE-RoBERTa-base-Transfer) | RoBERTa-base for Transfer task |
+| [binwang/RSE-RoBERTa-large-Transfer](https://huggingface.co/binwang/RSE-RoBERTa-large-Transfer) | RoBERTa-large for Transfer task |
 | [More to update](https://huggingface.co/binwang/) | Full list of models |
 
 </div>
@@ -130,12 +141,23 @@ The expected results:
 Explaination of the arguments of evaluation code (in `scripts/demo_inference_STS.sh`):
 
 `--model_name_or_path`: The model to be loaded for evaluation. We provide a serious of models and their performance comparison.
-`--model_name_or_path`: The model to be loaded for evaluation. We provide a serious of models and their performance comparison.
+
+`--rel_types`: The relations to be used in the current model. It should match the number of relations and their order during training. In the above example, two relations are used in training `entailment` and `duplicate_question`.
+
+`--sim_func`: The weights for each relation when computing the final weights. As we have multiple relational scores, the argument is the weight for weighted sum to calcuate the final score between two sentences. It can be flexibly adjusted for different applications.
+
+`--metric_for_eval`: Current evaluation tasks. Can be `STS`, `USEB`, `Transfer` or `EvalRank`.
 
 Result for other models:
 
-TODO: add a table
+TODO: add a table, add STR results as well
 
+### USEB Tasks
+
+- Download USEB datasets
+```
+to download
+```
 
 ### Transfer Tasks
 
@@ -145,9 +167,6 @@ TODO: xx
 
 TODO: xx
 
-### USEB Tasks
-
-TODO: xx
 
 ## Training, Inference and Evaluation
 
