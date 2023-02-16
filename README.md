@@ -127,7 +127,7 @@ cd rse_src/SentEval/data/downstream/
 bash download_RSE_SentEval_data.sh
 ```
 
-- To reproduce the evaluation on STS (`RSE-BERT-base` as am example, run in the main folder)
+- To reproduce the evaluation on STS (`RSE-BERT-base-STS` as am example, run in the main folder)
 
 ```
 bash scripts/demo_inference_STS.sh
@@ -152,9 +152,36 @@ Explaination of the arguments of evaluation code (in `scripts/demo_inference_STS
 
 `--metric_for_eval`: Current evaluation tasks. Can be `STS`, `USEB`, `Transfer` or `EvalRank`.
 
-Result for other models:
+Performance of other models (simply change `model_name_or_path` argument):
 
-TODO: add a table, add STR results as well
+```
++-------------------------------+----------+
+| Model                         | Avg. STS | 
++-------------------------------+----------+
+| binwang/RSE-BERT-base-STS     | 82.18    | 
++-------------------------------+----------+
+| binwang/RSE-BERT-large-STS    | 83.42    | 
++-------------------------------+----------+
+| binwang/RSE-RoBERTa-base-STS  | 82.71    | 
++-------------------------------+----------+
+| binwang/RSE-RoBERTa-large-STS | 84.41    | 
++-------------------------------+----------+
+```
+
+[STR](https://arxiv.org/abs/2110.04845) performance:
+```
++-------------------------------+----------+
+| Model                         | STR      | 
++-------------------------------+----------+
+| binwang/RSE-BERT-base-STS     | 80.69    | 
++-------------------------------+----------+
+| binwang/RSE-BERT-large-STS    | 81.98    | 
++-------------------------------+----------+
+| binwang/RSE-RoBERTa-base-STS  | 81.50    | 
++-------------------------------+----------+
+| binwang/RSE-RoBERTa-large-STS | 83.72    | 
++-------------------------------+----------+
+```
 
 ### USEB Tasks
 

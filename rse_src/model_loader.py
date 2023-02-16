@@ -58,14 +58,14 @@ def model_loader(accelerator, logger, args):
         )
 
     # Load RSE model
-    if 'bert-' in args.model_name_or_path:
+    if 'bert-' in args.model_name_or_path.lower():
         model = BertForRSE.from_pretrained(
             args.model_name_or_path,
             config    = config,
             cache_dir = args.cache_dir,
             args      = args,
         )
-    elif 'roberta-' in args.model_name_or_path:
+    elif 'roberta-' in args.model_name_or_path.lower():
         model = RoBERTaForRSE.from_pretrained(
             args.model_name_or_path,
             config    = config,
