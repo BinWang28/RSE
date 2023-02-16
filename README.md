@@ -90,7 +90,7 @@ Here are our provided model checkpoints, all available on Huggingface.
 | [binwang/RSE-BERT-large-10-relations](https://huggingface.co/binwang/RSE-BERT-large-10-relations) | all 10 relations, for demo |
 | [binwang/RSE-RoBERTa-base-10-relations](https://huggingface.co/binwang/RSE-RoBERTa-base-10-relations) | all 10 relations, for demo |
 | [binwang/RSE-RoBERTa-large-10-relations](https://huggingface.co/binwang/RSE-RoBERTa-large-10-relations) | all 10 relations, for demo |
-|-|-|
+|||
 | [binwang/RSE-BERT-base-STS](https://huggingface.co/binwang/RSE-BERT-base-STS) | BERT-base for STS task |
 | [binwang/RSE-BERT-large-STS](https://huggingface.co/binwang/RSE-BERT-large-STS) | BERT-large for STS task |
 | [binwang/RSE-RoBERTa-base-STS](https://huggingface.co/binwang/RSE-RoBERTa-base-STS) | RoBERTa-base for STS task |
