@@ -90,17 +90,17 @@ Here are our provided model checkpoints, all available on Huggingface.
 | [binwang/RSE-BERT-large-10-relations](https://huggingface.co/binwang/RSE-BERT-large-10-relations) | all 10 relations, for demo |
 | [binwang/RSE-RoBERTa-base-10-relations](https://huggingface.co/binwang/RSE-RoBERTa-base-10-relations) | all 10 relations, for demo |
 | [binwang/RSE-RoBERTa-large-10-relations](https://huggingface.co/binwang/RSE-RoBERTa-large-10-relations) | all 10 relations, for demo |
-|||
+|-|-|
 | [binwang/RSE-BERT-base-STS](https://huggingface.co/binwang/RSE-BERT-base-STS) | BERT-base for STS task |
 | [binwang/RSE-BERT-large-STS](https://huggingface.co/binwang/RSE-BERT-large-STS) | BERT-large for STS task |
 | [binwang/RSE-RoBERTa-base-STS](https://huggingface.co/binwang/RSE-RoBERTa-base-STS) | RoBERTa-base for STS task |
 | [binwang/RSE-RoBERTa-large-STS](https://huggingface.co/binwang/RSE-RoBERTa-large-STS) | RoBERTa-large for STS task |
-|||
+|-|-|
 | [binwang/RSE-BERT-base-USEB](https://huggingface.co/binwang/RSE-BERT-base-USEB) | BERT-base for USEB task |
 | [binwang/RSE-BERT-large-USEB](https://huggingface.co/binwang/RSE-BERT-large-USEB) | BERT-large for USEB task |
 | [binwang/RSE-RoBERTa-base-USEB](https://huggingface.co/binwang/RSE-RoBERTa-base-USEB) | RoBERTa-base for USEB task |
 | [binwang/RSE-RoBERTa-large-USEB](https://huggingface.co/binwang/RSE-RoBERTa-large-USEB) | RoBERTa-large for USEB task |
-|||
+|-|-|
 | [binwang/RSE-BERT-base-Transfer](https://huggingface.co/binwang/RSE-BERT-base-Transfer) | BERT-base for Transfer task |
 | [binwang/RSE-BERT-large-Transfer](https://huggingface.co/binwang/RSE-BERT-large-Transfer) | BERT-large for Transfer task |
 | [binwang/RSE-RoBERTa-base-Transfer](https://huggingface.co/binwang/RSE-RoBERTa-base-Transfer) | RoBERTa-base for Transfer task |
