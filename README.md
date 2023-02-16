@@ -105,6 +105,7 @@ Here are our provided model checkpoints, all available on Huggingface.
 | [binwang/RSE-BERT-large-Transfer](https://huggingface.co/binwang/RSE-BERT-large-Transfer) | BERT-large for Transfer task |
 | [binwang/RSE-RoBERTa-base-Transfer](https://huggingface.co/binwang/RSE-RoBERTa-base-Transfer) | RoBERTa-base for Transfer task |
 | [binwang/RSE-RoBERTa-large-Transfer](https://huggingface.co/binwang/RSE-RoBERTa-large-Transfer) | RoBERTa-large for Transfer task |
+|-|-|
 | [More to update](https://huggingface.co/binwang/) | Full list of models |
 
 </div>
