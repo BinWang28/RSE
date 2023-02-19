@@ -207,6 +207,19 @@ It will download and untar the datasets.
 bash scripts/demo_inference_USEB.sh
 ```
 
+It is same with:
+```
+accelerate launch --config_file accelerate_config.yaml --num_cpu_threads_per_process 10 \
+    rse_src/inference_eval.py \
+        --model_name_or_path binwang/RSE-BERT-base-USEB \
+        --mode RSE \
+        --rel_types entailment duplicate_question paraphrase same_caption qa_entailment same_sent \
+        --cache_dir scripts/model_cache/cache \
+        --pooler_type cls \
+        --max_seq_length 32 \
+        --metric_for_eval USEB
+```
+
 The expected results:
 ```
 +-----------+-------------+-------------+---------+-------+
@@ -215,6 +228,8 @@ The expected results:
 |   00.00   |    00.00    |    00.00    |  00.00  | 00.00 |
 +-----------+-------------+-------------+---------+-------+
 ```
+
+`--model_name_or_path`: The model to be loaded for evaluation. We provide a serious of models and their performance comparison.
 
 Performance of other models (simply change `model_name_or_path` argument):
 
