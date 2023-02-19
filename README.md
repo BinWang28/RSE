@@ -177,7 +177,7 @@ Performance of other models (simply change `model_name_or_path` argument):
 +-------------------------------+----------+
 ```
 
-STR [dataset](https://arxiv.org/abs/2110.04845) performance:
+Performance on "STR" [dataset](https://arxiv.org/abs/2110.04845):
 ```
 +-------------------------------+----------+
 | Model                         | STR      | 
