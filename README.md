@@ -24,7 +24,6 @@ This repository contains the code for our paper:
   - [Step 1: Environment Setup](#step-1-environment-setup)
   - [Step 2: Inference Demo](#step-2-inference-demo)
 - [Model List](#model-list)
-- [Easy Demo with Pip](#easy-demo-with-pip)
 - [Evaluation-Only](#evaluation-only)
   - [STS Tasks](#sts-tasks)
   - [USEB Tasks](#useb-tasks)
@@ -53,7 +52,7 @@ We believe the `Relational Sentence Embedding` has great potential in developing
 
 **Step-by-step Environment Setup**: We provide step-by-step environment [setup](environment/README.md).
 
-**One-line Environment Setup**: An easy one-line environment [setup](environment/README.md) (maybe harder to debug).
+**One-line Environment Setup**: An easy one-line environment [setup](environment/README.md) (maybe harder to debug). TODO: update
 
 ### Step 2: Inference Demo
 
@@ -109,10 +108,6 @@ Here are our provided model checkpoints, all available on Huggingface.
 | [More to update](https://huggingface.co/binwang/) | Full list of models |
 
 </div>
-
-## Easy Demo with Pip
-
-TODO: integrate the code and model with pypi
 
 ## Evaluation-Only
 
@@ -201,8 +196,42 @@ STR [dataset](https://arxiv.org/abs/2110.04845) performance:
 
 - Download USEB datasets
 ```
-to download
+cd rse_src/useb/data/
+bash download_USEB_data.sh
 ```
+It will download and untar the datasets.
+
+- To reproduce the evaluation on USEB (`RSE-BERT-base-USEB` as am example, run in the main folder)
+
+```
+bash scripts/demo_inference_USEB.sh
+```
+
+The expected results:
+```
++-----------+-------------+-------------+---------+-------+
+| AskUbuntu | CQADupStack | TwitterPara | SciDocs | Avg.  | 
++-----------+-------------+-------------+---------+-------+
+|   00.00   |    00.00    |    00.00    |  00.00  | 00.00 |
++-----------+-------------+-------------+---------+-------+
+```
+
+Performance of other models (simply change `model_name_or_path` argument):
+
+```
++--------------------------------+-----------+-------------+-------------+---------+-------+
+| Model                          | AskUbuntu | CQADupStack | TwitterPara | SciDocs | Avg.  |
++--------------------------------+-----------+-------------+-------------+---------+-------+
+| binwang/RSE-BERT-base-USEB     |   00.00   |    00.00    |    00.00    |  00.00  | 00.00 |
++--------------------------------+-----------+-------------+-------------+---------+-------+
+| binwang/RSE-BERT-large-USEB    |   00.00   |    00.00    |    00.00    |  00.00  | 00.00 |
++--------------------------------+-----------+-------------+-------------+---------+-------+
+| binwang/RSE-RoBERTa-base-USEB  |   00.00   |    00.00    |    00.00    |  00.00  | 00.00 |
++--------------------------------+-----------+-------------+-------------+---------+-------+
+| binwang/RSE-RoBERTa-large-USEB |   00.00   |    00.00    |    00.00    |  00.00  | 00.00 |
++--------------------------------+-----------+-------------+-------------+---------+-------+
+```
+
 
 ### Transfer Tasks
 

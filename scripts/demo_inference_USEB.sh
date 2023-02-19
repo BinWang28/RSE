@@ -9,14 +9,14 @@ echo "= = = = = = = = = = = = = ="
 
 accelerate launch --config_file accelerate_config.yaml --num_cpu_threads_per_process 10 \
     rse_src/inference_eval.py \
-        --model_name_or_path scripts/model_cache/RSE-BERT-base-STS \
+        --model_name_or_path binwang/RSE-BERT-base-USEB \
         --mode RSE \
         --rel_types entailment duplicate_question \
         --sim_func 1.0 0.5 \
         --cache_dir scripts/model_cache/cache \
         --pooler_type cls \
         --max_seq_length 32 \
-        --metric_for_eval USEB \
+        --metric_for_eval USEB
 
 echo "= = = = = = = = = = = = = ="
 echo "The project is Finished..."

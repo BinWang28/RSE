@@ -108,3 +108,7 @@ elif args.metric_for_eval == 'USEB':
 
     logger.info("Best Averaged USEB score: {}".format(np.mean(best_res)))
 
+if args.metric_for_eval == 'transfer_tasks':
+    eval_task = ['MR', 'CR', 'SUBJ', 'MPQA', 'SST2', 'TREC', 'MRPC']
+
+    eval_result, best_display_metrics = excute_eval(args, logger, accelerator, model, tokenizer, eval_task, eval_mode='full')
