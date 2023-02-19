@@ -225,6 +225,57 @@ The expected results:
 +-----------+-------------+-------------+---------+-------+
 | AskUbuntu | CQADupStack | TwitterPara | SciDocs | Avg.  | 
 +-----------+-------------+-------------+---------+-------+
+|   54.8    |    13.7     |    75.2     |  71.0   | 53.7  |
++-----------+-------------+-------------+---------+-------+
+```
+
+`--model_name_or_path`: The model to be loaded for evaluation. We provide a serious of models and their performance comparison.
+
+Performance of other models (simply change `model_name_or_path` argument):
+
+```
++--------------------------------+-----------+-------------+-------------+---------+-------+
+| Model                          | AskUbuntu | CQADupStack | TwitterPara | SciDocs | Avg.  |
++--------------------------------+-----------+-------------+-------------+---------+-------+
+| binwang/RSE-BERT-base-USEB     |   54.8    |    13.7     |    75.2     |  71.0   | 53.7  |
++--------------------------------+-----------+-------------+-------------+---------+-------+
+| binwang/RSE-BERT-large-USEB    |   56.2    |    13.9     |    76.7     |  71.9   | 54.7  |
++--------------------------------+-----------+-------------+-------------+---------+-------+
+| binwang/RSE-RoBERTa-base-USEB  |   56.2    |    13.3     |    74.8     |  69.7   | 53.5  |
++--------------------------------+-----------+-------------+-------------+---------+-------+
+| binwang/RSE-RoBERTa-large-USEB |   58.0    |    15.2     |    77.5     |  72.4   | 55.8  |
++--------------------------------+-----------+-------------+-------------+---------+-------+
+```
+
+
+### Transfer Tasks
+
+- No need to download data if you have done in `STS` section.
+- 
+- To reproduce the evaluation on Transfer Tasks (`RSE-BERT-base-Transfer` as am example, run in the main folder)
+
+```
+bash scripts/demo_inference_Transfer.sh
+```
+
+It is same with:
+```
+accelerate launch --config_file accelerate_config.yaml --num_cpu_threads_per_process 10 \
+    rse_src/inference_eval.py \
+        --model_name_or_path binwang/RSE-BERT-base-Transfer \
+        --mode RSE \
+        --rel_types entailment paraphrase \
+        --cache_dir scripts/model_cache/cache \
+        --pooler_type cls \
+        --max_seq_length 32 \
+        --metric_for_eval transfer_tasks
+```
+
+The expected results:
+```
++-----------+-------------+-------------+---------+-------+
+| AskUbuntu | CQADupStack | TwitterPara | SciDocs | Avg.  | 
++-----------+-------------+-------------+---------+-------+
 |   00.00   |    00.00    |    00.00    |  00.00  | 00.00 |
 +-----------+-------------+-------------+---------+-------+
 ```
@@ -247,10 +298,6 @@ Performance of other models (simply change `model_name_or_path` argument):
 +--------------------------------+-----------+-------------+-------------+---------+-------+
 ```
 
-
-### Transfer Tasks
-
-TODO: xx
 
 ### EvalRank Tasks
 
