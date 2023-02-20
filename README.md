@@ -274,11 +274,11 @@ accelerate launch --config_file accelerate_config.yaml --num_cpu_threads_per_pro
 
 The expected results:
 ```
-+-----------+-------------+-------------+---------+-------+
-| AskUbuntu | CQADupStack | TwitterPara | SciDocs | Avg.  | 
-+-----------+-------------+-------------+---------+-------+
-|   00.00   |    00.00    |    00.00    |  00.00  | 00.00 |
-+-----------+-------------+-------------+---------+-------+
++-------+-------+-------+-------+-------+-------+-------+-------+
+|  MR   |   CR  |  SUBJ |  MPQA |  SST2 |  TREC |  MPRC |  Avg. | 
++-------+-------+-------+-------+-------+-------+-------+-------+
+| 82.34 | 88.98 | 95.33 | 90.60 | 88.36 | 93.00 | 77.39 | 88.00 |
++-------+-------+-------+-------+-------+-------+-------+-------+
 ```
 
 `--model_name_or_path`: The model to be loaded for evaluation. We provide a serious of models and their performance comparison.
