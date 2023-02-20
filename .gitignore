@@ -154,5 +154,8 @@ rse_src/useb/data/data-eval/
 
 data/*.json
 
+scripts/demo_test.sh
+scripts/demo_test2.sh
+
 
 
