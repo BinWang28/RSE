@@ -11,12 +11,19 @@
 
 import logging
 import sys
+import math
 import json
 import torch
 
 import numpy as np
 
 import scipy.spatial as sp
+
+from tqdm import trange, tqdm
+
+from prettytable import PrettyTable
+
+from sklearn.metrics.pairwise import cosine_similarity
 
 from utils import format_output, format_output_useb
 
@@ -175,4 +182,107 @@ def eval_on_evalrank(args, logger, accelerator, model, tokenizer):
 
     logger.info('{} sentences as background sentences'.format(len(all_sents)))
 
-    import pdb; pdb.set_trace()
+    # Embed all sentences
+    sent2id        = {}
+    sents_embs     = []
+    count          = 0
+    ex_batch_size  = 64
+    ex_max_batches = math.ceil(len(all_sents)/float(ex_batch_size))
+
+    for cur_batch in trange(ex_max_batches):
+
+        cur_sents = all_sents[cur_batch*ex_batch_size:cur_batch*ex_batch_size+ex_batch_size]
+    
+        token_batch = tokenizer.batch_encode_plus(
+            cur_sents,
+            return_tensors='pt',
+            padding=True,
+            truncation=True,
+            max_length=args.max_seq_length,
+        )
+
+        token_batch = token_batch.to(accelerator.device)
+
+        with torch.no_grad():
+            outputs = model(**token_batch, output_hidden_states=True, return_dict=False, sent_emb=True)            
+            pooler_output = outputs[1]
+            cur_sents_emb = pooler_output.cpu()
+        
+        for bt_index in range(len(cur_sents)):
+            sent = cur_sents[bt_index]
+            if sent not in sent2id:
+                sent2id[sent] = count
+                count   = count + 1
+                ori_emb = cur_sents_emb[bt_index].squeeze().cpu().numpy()
+                sents_embs.append(ori_emb)
+            else:
+                continue
+
+    sents_embs = np.stack(sents_embs)
+
+    # Relational Embedding
+    rel_emb = model.rel_emb.embedding.weight.detach().cpu().numpy()
+    rel_weights = np.array([float(val) for val in args.sim_func])
+    rel_weights = rel_weights / sum(rel_weights)
+
+
+    # Compute the ranking performance
+    ranks = []
+    hits_max_bound = 15
+
+    for pair in tqdm(pos_pairs):
+        s1, s2 = pair
+        s1_emb = sents_embs[sent2id[s1]]
+        s2_emb = sents_embs[sent2id[s2]]
+
+        rel_scores = []
+        for single_rel_emb in rel_emb:
+            s1_emb_trans = s1_emb + single_rel_emb
+            s1_emb_trans = s1_emb_trans.reshape(1,-1)
+            s2_emb = s2_emb.reshape(1,-1)
+
+            score = cosine_similarity(s1_emb_trans, s2_emb).squeeze()
+            rel_scores.append(score)
+
+        pos_score = rel_weights.dot(rel_scores)
+
+        # To compute background score, I use for loop for accuracy, but sacriface efficiency.
+        bg_rel_scores = []
+        for single_rel_emb in rel_emb:
+            s1_emb_trans = s1_emb + single_rel_emb
+            s1_emb_trans = s1_emb_trans.reshape(1,-1)
+
+            rel_sim_matrix = cosine_similarity(s1_emb_trans, sents_embs)
+            bg_rel_scores.append(rel_sim_matrix)
+
+        bg_rel_scores = np.concatenate(bg_rel_scores, axis=0)
+        bg_score = rel_weights.dot(bg_rel_scores)
+
+        bg_score = np.squeeze(bg_score)
+        bg_score = np.sort(bg_score)[::-1]
+
+        # compute rank
+        rank = len(bg_score) - np.searchsorted(bg_score[::-1], pos_score, side='right')
+        if rank == 0: rank = 1
+        ranks.append(int(rank))
+
+
+    MR  = np.mean(ranks)
+    MRR = np.mean(1. / np.array(ranks))
+
+    hits_scores = []
+    for i in range(hits_max_bound): hits_scores.append(sum(np.array(ranks)<=(i+1))/len(ranks))
+
+    res_rank = {'MR'    : MR,
+                'MRR'   : MRR}
+
+    for i in range(hits_max_bound): res_rank['hits_'+str(i+1)]  = hits_scores[i]
+
+    table = PrettyTable(['Scores', 'Emb'])
+    table.add_row(['MR', MR])
+    table.add_row(['MRR', MRR])
+    for i in range(hits_max_bound): 
+        if i in [0,2]:
+            table.add_row(['Hits@'+str(i+1), res_rank['hits_'+str(i+1)]])
+    logging.info('Experimental results on ranking')
+    logging.info("\n"+str(table))
