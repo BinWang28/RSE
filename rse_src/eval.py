@@ -146,4 +146,7 @@ def eval_on_useb(args, logger, accelerator, model, tokenizer, sim_weights, mode=
 def eval_on_evalrank(args, logger, accelerator, model, tokenizer, sim_weights):
     ''' Evaluation on EvalRank tasks https://aclanthology.org/2022.acl-long.419/ '''
 
-    # load data
+    # Load Data
+    positive_pairs = []
+
+    import pdb; pdb.set_trace()
