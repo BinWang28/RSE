@@ -251,7 +251,7 @@ Performance of other models (simply change `model_name_or_path` argument):
 ### Transfer Tasks
 
 - No need to download data if you have done in `STS` section.
-- 
+
 - To reproduce the evaluation on Transfer Tasks (`RSE-BERT-base-Transfer` as am example, run in the main folder)
 
 ```

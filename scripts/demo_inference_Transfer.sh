@@ -15,6 +15,7 @@ accelerate launch --config_file accelerate_config.yaml --num_cpu_threads_per_pro
         --cache_dir scripts/model_cache/cache \
         --pooler_type cls \
         --max_seq_length 32 \
+        --layer_aggregation 5 \
         --metric_for_eval transfer_tasks
 
 echo "= = = = = = = = = = = = = ="
