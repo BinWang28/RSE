@@ -156,6 +156,7 @@ data/*.json
 
 scripts/demo_test.sh
 scripts/demo_test2.sh
+scripts/demo_test3.sh
 
 
 
