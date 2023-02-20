@@ -301,6 +301,44 @@ Performance of other models (simply change `model_name_or_path` argument):
 
 ### EvalRank Tasks
 
+- To reproduce the evaluation on EvalRank Tasks (`RSE-BERT-base-USEB` as am example, run in the main folder, we did not train a dedicated model for EvalRank, but still can perform evaluation. I simply use the `same_sent` relationship as the relational score.)
+
+
+```
+bash scripts/demo_inference_EvalRank.sh
+```
+
+It is same with:
+```
+accelerate launch --config_file accelerate_config.yaml --num_cpu_threads_per_process 10 \
+    rse_src/inference_eval.py \
+        --model_name_or_path binwang/RSE-BERT-base-USEB \
+        --mode RSE \
+        --rel_types entailment duplicate_question paraphrase same_caption qa_entailment same_sent \
+        --sim_func 0.0 0.0 0.0 0.0 0.0 1.0 \
+        --cache_dir scripts/model_cache/cache \
+        --pooler_type cls \
+        --max_seq_length 32 \
+        --metric_for_eval evalrank
+```
+
+
+The expected results:
+```
++------------------------------------+-------+---------+---------+
+| Model                              |  MRR  |  Hits@1 |  Hits@3 |
++------------------------------------+-------+---------+---------+
+| binwang/RSE-BERT-base-USEB         | 00.00 |  00.00  |  00.00  | 
++------------------------------------+-------+---------+---------+
+| binwang/RSE-BERT-large-USEB        | 00.00 |  00.00  |  00.00  | 
++------------------------------------+-------+---------+---------+
+| binwang/RSE-RoBERTa-base-USEB      | 00.00 |  00.00  |  00.00  | 
++------------------------------------+-------+---------+---------+
+| binwang/RSE-RoBERTa-large-USEB     | 00.00 |  00.00  |  00.00  | 
++------------------------------------+-------+---------+---------+
+```
+
+
 TODO: xx
 
 
