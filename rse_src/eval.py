@@ -141,3 +141,9 @@ def eval_on_useb(args, logger, accelerator, model, tokenizer, sim_weights, mode=
     logger.info("\n" + str(useb_diaplay_metrics))
 
     return useb_res, useb_res_main, useb_diaplay_metrics
+
+
+def eval_on_evalrank(args, logger, accelerator, model, tokenizer, sim_weights):
+    ''' Evaluation on EvalRank tasks https://aclanthology.org/2022.acl-long.419/ '''
+
+    # load data

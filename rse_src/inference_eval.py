@@ -21,7 +21,7 @@ from accelerate import Accelerator
 from inference_args import parse_args
 from model_loader import model_loader
 
-from eval import excute_eval, eval_on_useb
+from eval import excute_eval, eval_on_useb, eval_on_evalrank
 
 
 
@@ -112,3 +112,6 @@ if args.metric_for_eval == 'transfer_tasks':
     eval_task = ['MR', 'CR', 'SUBJ', 'MPQA', 'SST2', 'TREC', 'MRPC']
 
     eval_result, best_display_metrics = excute_eval(args, logger, accelerator, model, tokenizer, eval_task, eval_mode='full')
+
+if args.metric_for_eval == 'evalrank':
+    eval_on_evalrank(args, logger, accelerator, model, tokenizer, eval_task)
