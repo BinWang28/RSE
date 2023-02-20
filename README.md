@@ -29,7 +29,7 @@ This repository contains the code for our paper:
   - [USEB Tasks](#useb-tasks)
   - [Transfer Tasks](#transfer-tasks)
   - [EvalRank Tasks](#evalrank-tasks)
-- [Training, Inference and Evaluation](#training-inference-and-evaluation)
+- [Training, Inference, and Evaluation](#training-inference-and-evaluation)
   - [Data Preparation](#data-preparation)
   - [Training](#training)
 - [Citation](#citation)
@@ -305,7 +305,7 @@ Performance of other models (simply change `model_name_or_path` argument):
 TODO: xx
 
 
-## Training, Inference and Evaluation
+## Training, Inference, and Evaluation
 
 ### Data Preparation
 
