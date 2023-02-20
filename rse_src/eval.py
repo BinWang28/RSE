@@ -143,10 +143,36 @@ def eval_on_useb(args, logger, accelerator, model, tokenizer, sim_weights, mode=
     return useb_res, useb_res_main, useb_diaplay_metrics
 
 
-def eval_on_evalrank(args, logger, accelerator, model, tokenizer, sim_weights):
+def eval_on_evalrank(args, logger, accelerator, model, tokenizer):
     ''' Evaluation on EvalRank tasks https://aclanthology.org/2022.acl-long.419/ '''
 
     # Load Data
-    positive_pairs = []
+
+    pos_pairs = []
+    all_sents = []
+
+    logger.info('*** Prepare pos sentence pairs for ranking evaluation ***')
+
+    with open('rse_src/evalrank/' + 'pos_pair.txt', 'r') as f: 
+        lines = f.readlines()
+        for line in lines:
+            sent1, sent2 = line.strip().split('\t')
+            pos_pairs.append([sent1, sent2])
+    
+    
+    logger.info("Loading Background Sentences for Ranking")
+
+    for item in pos_pairs:
+        if item[0] not in all_sents: all_sents.append(item[0])
+        if item[1] not in all_sents: all_sents.append(item[1])
+
+    with open('rse_src/evalrank/' + 'background_sent.txt', 'r') as f:
+        lines = f.readlines()
+        for line in lines:
+            line = line.strip()
+            if line not in all_sents:
+                all_sents.append(line)
+
+    logger.info('{} sentences as background sentences'.format(len(all_sents)))
 
     import pdb; pdb.set_trace()

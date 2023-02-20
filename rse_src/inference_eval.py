@@ -114,4 +114,4 @@ if args.metric_for_eval == 'transfer_tasks':
     eval_result, best_display_metrics = excute_eval(args, logger, accelerator, model, tokenizer, eval_task, eval_mode='full')
 
 if args.metric_for_eval == 'evalrank':
-    eval_on_evalrank(args, logger, accelerator, model, tokenizer, eval_task)
+    eval_on_evalrank(args, logger, accelerator, model, tokenizer)
