@@ -11,7 +11,6 @@ This repository contains the code for our paper:
 - **Feb. 20, 2023**: We released the complete checkpoints and their evaluation scripts on a wide range of tasks.
 - **Feb. 13, 2023**: We released our first [checkpoint](demo/) and inference [demo](demo/). Check it out.
 - **Dec. 17, 2022**: Our paper is available online: [RSE Paper](https://arxiv.org/abs/2212.08802).
-
 ****
 
 
