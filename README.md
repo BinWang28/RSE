@@ -350,7 +350,7 @@ bash download_relational_data.sh
 
 ### Training
 
-Training STS model with (`BERT-base-uncased`):
+Training STS model with (`BERT-base-uncased`), it takes me around 1 hours with RTX-3090:
 
 ```
 bash scripts/demo_train_STS.sh
@@ -389,7 +389,8 @@ accelerate launch --config_file accelerate_config.yaml --num_cpu_threads_per_pro
         --seed 1234
 ```
 
-TODO: Provide the whole training files (1) continue training (2) for STS Tasks (3) for Transfer Tasks (4) for USEB Tasks.
+
+
 
 
 ## Citation
