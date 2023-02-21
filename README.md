@@ -350,6 +350,11 @@ bash download_relational_data.sh
 
 ### Training
 
+Training xxx model
+```
+
+```
+
 TODO: Provide the whole training files (1) continue training (2) for STS Tasks (3) for Transfer Tasks (4) for USEB Tasks.
 
 
