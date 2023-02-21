@@ -6,8 +6,6 @@ echo $currentDate
 start=`date +%s`
 echo "= = = = = = = = = = = = = ="
 
-
-
 accelerate launch --config_file accelerate_config.yaml --num_cpu_threads_per_process 10 \
     rse_src/main.py \
         --mode RSE \
@@ -27,7 +25,7 @@ accelerate launch --config_file accelerate_config.yaml --num_cpu_threads_per_pro
         --grad_cache_batch_size 256 \
         --learning_rate 5e-5 \
         --rel_lr 1e-2 \
-        --cache_dir scripts/model_cache \
+        --cache_dir scripts/cache \
         --pooler_type cls \
         --temp 0.05 \
         --preprocessing_num_workers 8 \
@@ -36,6 +34,7 @@ accelerate launch --config_file accelerate_config.yaml --num_cpu_threads_per_pro
         --weight_decay 0.0 \
         --num_warmup_steps 0 \
         --seed 1234
+
 
 echo "= = = = = = = = = = = = = ="
 echo "The project is Finished..."
