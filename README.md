@@ -8,6 +8,7 @@ This repository contains the code for our paper:
 [Relational Sentence Embedding for Flexible Semantic Matching](https://arxiv.org/abs/2212.08802).
 
 ****
+- **Feb. 21, 2023**: We released the training demo for STS tasks.
 - **Feb. 20, 2023**: We released the complete checkpoints and their evaluation scripts on a wide range of tasks.
 - **Feb. 13, 2023**: We released our first [checkpoint](demo/) and inference [demo](demo/). Check it out.
 - **Dec. 17, 2022**: Our paper is available online: [RSE Paper](https://arxiv.org/abs/2212.08802).
@@ -50,8 +51,6 @@ We believe the `Relational Sentence Embedding` has great potential in developing
 ### Step 1: Environment Setup
 
 **Step-by-step Environment Setup**: We provide step-by-step environment [setup](environment/README.md).
-
-**One-line Environment Setup**: An easy one-line environment [setup](environment/README.md) (maybe harder to debug). TODO: update
 
 ### Step 2: Inference Demo
 

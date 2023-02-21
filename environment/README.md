@@ -69,9 +69,3 @@ pip install scikit-learn==1.0.2
 pip install pytrec-eval==0.5
 ```
 
-xxx
-
-
-## One-line environment setup
-
-We proiv
