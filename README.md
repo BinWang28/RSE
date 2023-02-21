@@ -246,7 +246,6 @@ Performance of other models (simply change `model_name_or_path` argument):
 +--------------------------------+-----------+-------------+-------------+---------+-------+
 ```
 
-
 ### Transfer Tasks
 
 - No need to download data if you have done in `STS` section.
@@ -337,9 +336,6 @@ The expected results:
 | binwang/RSE-RoBERTa-large-USEB     | 70.48 |  49.25  |  90.97  | 
 +------------------------------------+-------+---------+---------+
 ```
-
-
-TODO: xx
 
 
 ## Training, Inference, and Evaluation
