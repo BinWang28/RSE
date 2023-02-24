@@ -354,10 +354,22 @@ bash download_relational_data.sh
 Training STS model with (`BERT-base-uncased`), it takes me around 1 hours with RTX-3090:
 
 ```
-bash scripts/demo_train_STS.sh
+
+# For BERT-base-uncased
+bash scripts/demo_train_STS_bert_base.sh
+
+# For BERT-large-uncased
+bash scripts/demo_train_STS_bert_large.sh
+
+# For RoBERTa-base-uncased
+bash scripts/demo_train_STS_roberta_base.sh
+
+# For RoBERTa-large-uncased
+bash scripts/demo_train_STS_roberta_large.sh
+
 ```
 
-It is the same as:
+It is the same as (for `BERT-base-uncased`):
 
 ```
 accelerate launch --config_file accelerate_config.yaml --num_cpu_threads_per_process 10 \
