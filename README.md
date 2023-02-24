@@ -405,15 +405,38 @@ accelerate launch --config_file accelerate_config.yaml --num_cpu_threads_per_pro
 ### Training - Transfer Tasks
 
 ```
-# For BERT-base-uncased
-bash scripts/demo_train_transfer.sh
 
-# 
+# For BERT-base-uncased
+bash scripts/demo_train_transfer_bert_base.sh
+
+# For BERT-large-uncased
+bash scripts/demo_train_transfer_bert_large.sh
+
+# For RoBERTa-base-uncased
+bash scripts/demo_train_transfer_roberta_base.sh
+
+# For RoBERTa-large-uncased
+bash scripts/demo_train_transfer_roberta_large.sh
+
 ```
 
 ### Training - USEB Tasks
 
+```
 
+# For BERT-base-uncased
+bash scripts/demo_train_USEB_bert_base.sh
+
+# For BERT-large-uncased
+bash scripts/demo_train_USEB_bert_large.sh
+
+# For RoBERTa-base-uncased
+bash scripts/demo_train_USEB_roberta_base.sh
+
+# For RoBERTa-large-uncased
+bash scripts/demo_train_USEB_roberta_large.sh
+
+```
 
 
 ## Citation
