@@ -31,7 +31,9 @@ This repository contains the code for our paper:
   - [EvalRank Tasks](#evalrank-tasks)
 - [Training, Inference, and Evaluation](#training-inference-and-evaluation)
   - [Data Preparation](#data-preparation)
-  - [Training](#training)
+  - [Training - STS](#training---sts)
+  - [Training - Transfer Tasks](#training---transfer-tasks)
+  - [Training - USEB Tasks](#training---useb-tasks)
 - [Citation](#citation)
 
 
@@ -347,7 +349,7 @@ cd data/
 bash download_relational_data.sh
 ```
 
-### Training
+### Training - STS
 
 Training STS model with (`BERT-base-uncased`), it takes me around 1 hours with RTX-3090:
 
@@ -388,6 +390,16 @@ accelerate launch --config_file accelerate_config.yaml --num_cpu_threads_per_pro
         --seed 1234
 ```
 
+### Training - Transfer Tasks
+
+```
+# For BERT-base-uncased
+bash scripts/demo_train_transfer.sh
+
+# 
+```
+
+### Training - USEB Tasks
 
 
 
