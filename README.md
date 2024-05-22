@@ -447,8 +447,9 @@ Please cite our paper if you find RSE useful in your work.
 @article{wang2022rse,
   title={Relational Sentence Embedding for Flexible Semantic Matching},
   author={Wang, Bin and Li, Haizhou},
-  journal={arXiv preprint arXiv:2212.08802},
-  year={2022}
+  journal={Proceedings of the 8th Workshop on Representation Learning for NLP (RepL4NLP 2023)},
+  publisher={Association for Computational Linguistics},
+  year={2023}
 }
 ```
 
